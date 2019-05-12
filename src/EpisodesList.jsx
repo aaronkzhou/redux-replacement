@@ -1,4 +1,5 @@
 import React from 'react';
+import { path } from 'ramda';
 
 export default function EpisodesList(props) {
   const { episodes, toggleFavAction, favourites, state } = props;
@@ -7,8 +8,8 @@ export default function EpisodesList(props) {
     return (
       <section key={episode.id} className="episode-box">
         <img
-          src={episode.image.medium}
-          alt={`Rick and Morty ${episode.name}`}
+          src={path(['image', 'medium'])(episode)}
+          alt={`Mad Men ${episode.name}`}
         />
         <div>{episode.name}</div>
         <section style={{ display: 'flex', justifyContent: 'space-between' }}>

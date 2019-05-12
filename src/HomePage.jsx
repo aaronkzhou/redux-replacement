@@ -20,7 +20,28 @@ export default function HomePage() {
 
   return (
     <React.Fragment>
-      <React.Suspense fallback={<div>Loading...</div>}>
+      <React.Suspense
+        fallback={
+          <div>
+            here is a shit testing stuff for showing the loading spinner... here
+            is a shit testing stuff for showing the loading spinner...here is a
+            shit testing stuff for showing the loading spinner...here is a shit
+            testing stuff for showing the loading spinner...here is a shit
+            testing stuff for showing the loading spinner...here is a shit
+            testing stuff for showing the loading spinner...here is a shit
+            testing stuff for showing the loading spinner...here is a shit
+            testing stuff for showing the loading spinner...here is a shit
+            testing stuff for showing the loading spinner...here is a shit
+            testing stuff for showing the loading spinner...here is a shit
+            testing stuff for showing the loading spinner...here is a shit
+            testing stuff for showing the loading spinner...here is a shit
+            testing stuff for showing the loading spinner...here is a shit
+            testing stuff for showing the loading spinner...here is a shit
+            testing stuff for showing the loading spinner...here is a shit
+            testing stuff for showing the loading spinner...
+          </div>
+        }
+      >
         <div className="episode-layout">
           <EpisodesList {...props} />
         </div>

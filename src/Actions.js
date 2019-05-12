@@ -1,5 +1,5 @@
 const API_URL =
-  'https://api.tvmaze.com/singlesearch/shows?q=rick-&-morty&embed=episodes';
+  'https://api.tvmaze.com/singlesearch/shows?q=mad-men&embed=episodes';
 
 export const fetchDataAction = async dispatch => {
   const data = await fetch(API_URL);
@@ -16,10 +16,13 @@ export const toggleFavAction = (episode, state, dispatch) => {
     type: 'ADD_FAV',
     payload: episode
   };
-  if (episodeInFavourites)
+
+  if (episodeInFavourites) {
     dispatchObj = {
       type: 'REMOVE_FAV',
       payload: state.favourites.filter(fav => fav.id !== episode.id)
     };
+  }
+
   return dispatch(dispatchObj);
 };

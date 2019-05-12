@@ -9,7 +9,7 @@ function App(props) {
     <React.Fragment>
       <header className="header">
         <div>
-          <h1>Rick and Morty</h1>
+          <h1>Mad Men</h1>
           <p>Pick your favourite episodes</p>
         </div>
         <div>
